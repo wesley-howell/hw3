@@ -48,10 +48,21 @@ document.addEventListener('DOMContentLoaded', async function() {
   // combine dropoff location variables into single object and store to memory
   let dropoffCombined = `${dropoffAddress}, ${dropoffCity}, ${dropoffState} ${dropoffZip}` 
 
-  // concatenate the previous 4 objects into one human-readable string output and store to memory, and display in console log
-  let rideDetailsCombined = `Noober X Passenger: ${passengerDetailsCombined}. Party Size: ${partySize}. Pickup at ${pickupCombined}. Dropoff at ${dropoffCombined}.` 
-  console.log(rideDetailsCombined) 
+  //create variable for Noober Purple service level and store to memory
+  let nooberPurple = ride.purpleRequested 
 
+
+  // concatenate the previous 4 objects into one human-readable string output and store to memory, and display in console log
+  let rideDetailsCombined = `Passenger: ${passengerDetailsCombined}. Party Size: ${partySize}. Pickup at ${pickupCombined}. Dropoff at ${dropoffCombined}.` 
+
+  // create conditional test to differentiate passenger service level between Noober Purple and Noober X, and save to memory
+  if (nooberPurple == `true`) {
+    console.log(`Noober Purple ${rideDetailsCombined}`)
+  } else if (partySize > 3) {
+    console.log(`Noober XL ${rideDetailsCombined}`)
+  } else {
+    console.log(`Noober X ${rideDetailsCombined}`)
+  }
 
 
 
