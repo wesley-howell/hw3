@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   let rideDetailsCombined = `Passenger: ${passengerDetailsCombined}. Party Size: ${partySize}. Pickup at ${pickupCombined}. Dropoff at ${dropoffCombined}.` 
 
   // create conditional test to differentiate passenger service level between Noober Purple and Noober X, and save to memory
-  if (nooberPurple == `true`) {
+  if (nooberPurple == true) {
     console.log(`Noober Purple ${rideDetailsCombined}`)
   } else if (partySize > 3) {
     console.log(`Noober XL ${rideDetailsCombined}`)
