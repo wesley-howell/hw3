@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   let passengerPhoneNumber = ride.passengerDetails.phoneNumber 
 
   // combine passenger details variables into single object and store to memory
-  let passengerDetailsCombined = `${passengerFirstName} ${passengerLastName} - ${passengerPhoneNumber}.`
+  let passengerDetailsCombined = `${passengerFirstName} ${passengerLastName} - ${passengerPhoneNumber}`
   
   // create variable for number of passengers in ride, and store to memory
   let partySize = ride.numberOfPassengers 
@@ -49,9 +49,9 @@ document.addEventListener('DOMContentLoaded', async function() {
   let dropoffCombined = `${dropoffAddress}, ${dropoffCity}, ${dropoffState} ${dropoffZip}` 
 
   // concatenate the previous 4 objects into one human-readable string output and store to memory, and display in console log
-  let rideDetailsCombined = `Noober X Passenger: ${passengerDetailsCombined}. Pickup at ${pickupCombined}. Dropoff at ${dropoffCombined}.` 
+  let rideDetailsCombined = `Noober X Passenger: ${passengerDetailsCombined}. Party Size: ${partySize}. Pickup at ${pickupCombined}. Dropoff at ${dropoffCombined}.` 
   console.log(rideDetailsCombined) 
-  
+
 
 
 
