@@ -21,7 +21,12 @@ document.addEventListener('DOMContentLoaded', async function() {
   let passengerFirstName = ride.passengerDetails.first 
 
   console.log(passengerFirstName)
-  
+
+  let passengerLastName = ride.passengerDetails.last 
+
+  console.log(passengerLastName)
+
+
 
   // 🔥 YOUR CODE ENDS HERE 🔥
 })
