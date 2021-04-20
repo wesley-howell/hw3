@@ -19,12 +19,19 @@ document.addEventListener('DOMContentLoaded', async function() {
 
   // parse passenger details into variables for name and phone number, and store them in memory
   let passengerFirstName = ride.passengerDetails.first 
-
-  console.log(passengerFirstName)
-
   let passengerLastName = ride.passengerDetails.last 
+  let passengerPhoneNumber = ride.passengerDetails.phoneNumber 
 
-  console.log(passengerLastName)
+  // parse pickupLocation details into variables, and store them to memory
+  let pickupAddress = ride.pickupLocation.address 
+  let pickupCity = ride.pickupLocation.city
+  let pickupState = ride.pickupLocation.state 
+  let pickupZip = ride.pickupLocation.zip 
+
+  // delete the following line and console log
+  let pickupCombined = `${pickupAddress}, ${pickupCity}, ${pickupState} ${pickupZip}`
+
+  console.log(pickupCombined) 
 
 
 
